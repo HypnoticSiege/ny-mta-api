@@ -1,0 +1,22 @@
+{
+  "name": "mta-api",
+  "version": "1.0.0",
+  "description": " A simple Node JS Wrapper for the MTA API",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node tests/index",
+    "build": "tsc"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "author": "Luis Quezada (HypnoticSiege)",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}

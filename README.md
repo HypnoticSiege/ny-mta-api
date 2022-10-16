@@ -4,17 +4,17 @@
  ## Initializing the client
  To obtain a MTA API Key/Token please click [here!](https://register.developer.obanyc.com/)
  ```ts
-    import MTAClient from "mta-api";
-    const client = new MTAClient("YOUR_MTA_TOKEN");
+import MTAClient from "mta-api";
+const client = new MTAClient("YOUR_MTA_TOKEN");
  ```
 
  ### getStop()
  ```ts
-    async function getStop(id:Number) {
-        console.log(await client.getStop(id))
-    };
+async function getStop(id:Number) {
+   console.log(await client.getStop(id))
+};
 
-    getStop(202650);
+getStop(202650);
  ```
 
 ### More methods/functions to come soon™️ (Trains & More!)

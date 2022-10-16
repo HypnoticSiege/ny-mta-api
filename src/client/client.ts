@@ -16,7 +16,13 @@ class MTAClient {
       this.token = token;
     };
 
-    public async getStop(id: number) {
+    /**
+     * 
+     * @param id MTA StopID 
+     * @param index Index of what bus data to get back
+     * @returns {object} Single Bus object containing inforation on it!
+     */
+    public async getStop(id: number, index?: number) {
         try {
             const response = await this.client.get('/stop-monitoring.json', {
                 params: {
@@ -25,7 +31,28 @@ class MTAClient {
                 }
             });
 
-            return response.data.Siri.ServiceDelivery.StopMonitoringDelivery[0];
+            return response.data.Siri.ServiceDelivery.StopMonitoringDelivery[index || 0];
+        } catch (e) {
+            console.log(`[MTA API - ERR] Could not get stop!`);
+            return [];
+        };
+    };
+
+    /**
+     * 
+     * @param id MTA StopID
+     * @returns {Array} of all Busses on track for that stop.
+     */
+    public async getStopData(id: number) {
+        try {
+            const response = await this.client.get('/stop-monitoring.json', {
+                params: {
+                    key: this.token,
+                    MonitoringRef: id
+                }
+            });
+
+            return response.data.Siri.ServiceDelivery.StopMonitoringDelivery;
         } catch (e) {
             console.log(`[MTA API - ERR] Could not get stop!`);
             return [];

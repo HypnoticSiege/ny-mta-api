@@ -4,7 +4,7 @@
  ## Initializing the client
  To obtain a MTA API Key/Token please click [here!](https://register.developer.obanyc.com/)
  ```ts
-import MTAClient from "mta-api";
+import MTAClient from "ny-mta-api";
 const client = new MTAClient("YOUR_MTA_TOKEN");
  ```
 

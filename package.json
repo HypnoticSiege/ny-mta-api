@@ -1,11 +1,12 @@
 {
-  "name": "mta-api",
+  "name": "ny-mta-api",
   "version": "1.0.0",
   "description": " A simple Node JS Wrapper for the MTA API",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "repository": "https://github.com/HypnoticSiege/mta-api",
   "directories": {
-    "test": "tests"
+    "test": "src/tests"
   },
   "scripts": {
     "test": "node lib/tests/index",

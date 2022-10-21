@@ -9,7 +9,8 @@
     "test": "src/tests"
   },
   "scripts": {
-    "test": "node tests/index.js",
+    "test:js": "node tests/js/index.js",
+    "test:ts": "nodemon tests/ts/index.ts",
     "build": "tsc"
   },
   "files": [

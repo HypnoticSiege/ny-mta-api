@@ -1,3 +1,5 @@
+//TODO Make package actually work with js without the require().default;
+
 import axios from 'axios';
 
 class MTAClient {

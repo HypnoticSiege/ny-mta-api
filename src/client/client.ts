@@ -1,4 +1,4 @@
-//TODO Make package actually work with js without the require().default;
+//TODO Make package actually work with js without the require().default
 
 import axios from 'axios';
 

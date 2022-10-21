@@ -7,6 +7,11 @@
 import MTAClient from "ny-mta-api";
 const client = new MTAClient("YOUR_MTA_TOKEN");
  ```
+ Or with JavaScript
+ ```js
+const MTAClient = require('../lib/client/client').default;
+const Client = new MTAClient("YOUR_TOKEN");
+ ```
 
  ### getStop()
  ```ts

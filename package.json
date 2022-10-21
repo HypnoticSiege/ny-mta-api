@@ -11,6 +11,7 @@
   "scripts": {
     "test:js": "node examples/js/index.js",
     "test:ts": "nodemon examples/ts/index.ts",
+    "test:auto": "node tests/index.test.js",
     "build": "tsc"
   },
   "files": [
@@ -20,5 +21,8 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.26.1"
+  },
+  "devDependencies": {
+    "jest": "^29.2.1"
   }
 }

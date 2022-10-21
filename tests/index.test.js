@@ -1,4 +1,4 @@
-const MTAClient = require('ny-mta-api').default;
+const MTAClient = require('ny-mta-api');
 const Client = new MTAClient(process.env.KEY);
 
 test('checkstop', () => {

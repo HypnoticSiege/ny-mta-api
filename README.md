@@ -9,7 +9,7 @@ const client = new MTAClient("YOUR_MTA_TOKEN");
  ```
  Or with JavaScript
  ```js
-const MTAClient = require('../lib/client/client').default;
+const MTAClient = require('ny-mta-api').default;
 const Client = new MTAClient("YOUR_TOKEN");
  ```
 

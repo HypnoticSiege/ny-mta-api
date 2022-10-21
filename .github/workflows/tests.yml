@@ -22,4 +22,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
+    - run: tsc
     - run: KEY=${{ secrets.key }} node tests/index.test.js

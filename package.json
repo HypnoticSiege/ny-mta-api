@@ -9,7 +9,7 @@
     "test": "src/tests"
   },
   "scripts": {
-    "test": "node lib/tests/index",
+    "test": "node tests/index.js",
     "build": "tsc"
   },
   "files": [

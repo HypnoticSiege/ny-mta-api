@@ -1,4 +1,4 @@
-import MTAClient from "../lib/client/client";
+import MTAClient from "../../lib/client/client";
 const client = new MTAClient("YOUR_TOKEN");
 
 async function getStop(id:number) {

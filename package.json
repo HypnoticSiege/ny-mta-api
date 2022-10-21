@@ -20,7 +20,8 @@
   "author": "Luis Quezada (HypnoticSiege)",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.26.1"
+    "axios": "^0.26.1",
+    "ny-mta-api": "^1.2.3"
   },
   "devDependencies": {
     "jest": "^29.2.1"

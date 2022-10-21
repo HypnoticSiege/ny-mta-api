@@ -34,7 +34,10 @@ class MTAClient {
             return response.data.Siri.ServiceDelivery.StopMonitoringDelivery[index || 0];
         } catch (e) {
             console.log(`[MTA API - ERR] Could not get stop!`);
-            return [];
+            return [{
+                err: true,
+                msg: "[MTA API - ERR] Could not get stop!"
+            }];
         };
     };
 
@@ -55,7 +58,10 @@ class MTAClient {
             return response.data.Siri.ServiceDelivery.StopMonitoringDelivery;
         } catch (e) {
             console.log(`[MTA API - ERR] Could not get stop!`);
-            return [];
+            return [{
+                err: true,
+                msg: "[MTA API - ERR] Could not get stop!"
+            }];
         };
     };
 };

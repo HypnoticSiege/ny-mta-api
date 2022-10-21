@@ -9,8 +9,8 @@
     "test": "src/tests"
   },
   "scripts": {
-    "test:js": "node tests/js/index.js",
-    "test:ts": "nodemon tests/ts/index.ts",
+    "test:js": "node examples/js/index.js",
+    "test:ts": "nodemon examples/ts/index.ts",
     "build": "tsc"
   },
   "files": [

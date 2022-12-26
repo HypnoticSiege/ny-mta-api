@@ -66,7 +66,7 @@ export class MtaApiWrapper {
       }
       );
       
-    return response.data.Siri.ServiceDelivery.StopMonitoringDelivery[0];
+    return response.data.Siri.ServiceDelivery.StopMonitoringDelivery[0].MonitoredStopVisit;
   }
 }
 

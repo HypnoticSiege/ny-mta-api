@@ -40,13 +40,17 @@ var index_1 = require("../../lib/index");
 var mtaApi = new index_1.MtaApiWrapper('5ca2e6cc-7522-4bce-9589-0bfa2dded14a');
 function main() {
     return __awaiter(this, void 0, void 0, function () {
-        var busStop;
+        var busStop, busLocation;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0: return [4 /*yield*/, mtaApi.getStop('202650')];
                 case 1:
                     busStop = _a.sent();
                     console.log('There are ' + busStop.length + ' buses approaching this stop.');
+                    return [4 /*yield*/, mtaApi.getBusLocation('MTA NYCT_S44')];
+                case 2:
+                    busLocation = _a.sent();
+                    console.log('The bus is at ' + busLocation.latitude + ', ' + busLocation.longitude);
                     return [2 /*return*/];
             }
         });

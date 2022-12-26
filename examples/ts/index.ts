@@ -1,8 +1,11 @@
-import MTAClient from "../../lib/client/client";
-const client = new MTAClient("YOUR_TOKEN");
+import {
+    MtaApiWrapper
+} from '../../lib/index';
+const mtaApi = new MtaApiWrapper('5ca2e6cc-7522-4bce-9589-0bfa2dded14a');
 
-async function getStop(id:number) {
-    console.log(await client.getStop(id))
-};
+async function main() {
+    const busStop = await mtaApi.getStop('202650');
+    console.log(busStop);
+}
 
-getStop(202650);
+main()

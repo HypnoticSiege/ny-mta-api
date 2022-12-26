@@ -1,6 +1,6 @@
 import {
     MtaApiWrapper
-} from '../../lib/index';
+} from 'ny-mta-api';
 const mtaApi = new MtaApiWrapper('5ca2e6cc-7522-4bce-9589-0bfa2dded14a');
 
 async function main() {

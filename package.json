@@ -10,19 +10,18 @@
     },
     "scripts": {
         "test:js": "node examples/js/index.js",
-        "test:ts": "nodemon examples/ts/index.ts",
+        "test:ts": "tsc examples/ts/index.ts && nodemon examples/ts/index.js",
         "test:auto": "node tests/index.test.js",
         "build": "tsc"
     },
     "files": [
         "lib/**/*"
     ],
-    "type": "module",
     "author": "Luis Quezada (HypnoticSiege)",
     "license": "ISC",
     "dependencies": {
         "axios": "^0.26.1",
-        "ny-mta-api": "^1.2.6"
+        "ny-mta-api": "^1.2.7"
     },
     "devDependencies": {
         "jest": "^29.2.1"

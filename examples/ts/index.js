@@ -36,8 +36,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 exports.__esModule = true;
-var ny_mta_api_1 = require("ny-mta-api");
-var mtaApi = new ny_mta_api_1.MtaApiWrapper('5ca2e6cc-7522-4bce-9589-0bfa2dded14a');
+var index_1 = require("../../lib/index");
+var mtaApi = new index_1.MtaApiWrapper('5ca2e6cc-7522-4bce-9589-0bfa2dded14a');
 function main() {
     return __awaiter(this, void 0, void 0, function () {
         var busStop;
@@ -46,7 +46,7 @@ function main() {
                 case 0: return [4 /*yield*/, mtaApi.getStop('202650')];
                 case 1:
                     busStop = _a.sent();
-                    console.log(busStop);
+                    console.log('There are ' + busStop.length + ' buses approaching this stop.');
                     return [2 /*return*/];
             }
         });

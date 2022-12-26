@@ -55,7 +55,7 @@ export class MtaApiWrapper {
    * @param stopId The ID of the bus stop to retrieve
    * @returns Information about the bus stop
    */
-  async getStop(stopId: string): Promise<Stop> {
+  async getStop(stopId: string): Promise<any> {
     const response = await axios.get(
       `http://bustime.mta.info/api/siri/stop-monitoring.json`,
       {
@@ -85,11 +85,4 @@ interface SubwayLine {
 interface BusLocation {
   latitude: number;
   longitude: number;
-}
-
-/**
- * A bus stop in the NYC MTA
- */
-interface Stop {
-  name: string;
 }

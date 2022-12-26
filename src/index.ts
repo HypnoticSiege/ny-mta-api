@@ -3,7 +3,7 @@ import axios from 'axios';
 /**
  * A class that wraps the NYC MTA API
  */
-class MtaApiWrapper {
+export class MtaApiWrapper {
   // The API key for the NYC MTA API
   private apiKey: string;
 

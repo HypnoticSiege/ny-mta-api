@@ -64,8 +64,9 @@ export class MtaApiWrapper {
           MonitoringRef: stopId,
         },
       }
-    );
-    return response.data.StopMonitoringDelivery[0].MonitoredStopVisit[0].MonitoredVehicleJourney.MonitoredCall.StopPointName;
+      );
+      
+    return response.data.Siri.ServiceDelivery.StopMonitoringDelivery[0];
   }
 }
 
